@@ -1,14 +1,47 @@
+/* Footer Container */
 footer {
-  padding: 2rem;
-  background-color: var(--overlay-background-color);
-  font-size: var(--body-font-size-s);
+  padding: 1rem 0; /* Add spacing at the top and bottom */
+  background-color: #f7f7f7; /* Choose a light background color */
+  font-size: 16px; /* Adjust font size */
+  color: #555; /* Set a text color */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center-align the content horizontally */
+  align-items: center; /* Center-align the content vertically */
 }
 
+/* Footer Content Container */
 footer .footer {
   max-width: 1200px;
-  margin: auto;
+  text-align: center; /* Center-align text content within the container */
 }
 
+/* Footer Paragraph Style */
 footer .footer p {
   margin: 0;
+  font-size: 14px; /* Adjust font size for footer text */
+  color: #777; /* Use a slightly lighter color for text */
+}
+
+/* Footer Link Style */
+footer .footer a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #007bff; /* Use a primary color for links */
+  transition: color 0.3s; /* Add a smooth color transition */
+}
+
+/* Footer Link Hover Effect */
+footer .footer a:hover {
+  color: #0056b3; /* Change link color on hover */
+}
+
+/* Footer Social Media Icons (if applicable) */
+.footer-social {
+  list-style: none; /* Remove bullet points from the list */
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
+  display: flex; /* Use flexbox for layout control */
+}
+
+.footer-social li {
+  margin-right: 10px; /* Add spacing between social icons */
 }

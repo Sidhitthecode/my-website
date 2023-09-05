@@ -141,26 +141,44 @@ a:hover {
 
 /* buttons */
 a.button:any-link, button {
-  font-family: var(--body-font-family);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
   border: 2px solid transparent;
-  padding: 5px 20px;
+  padding: 10px 30px;
   text-align: center;
   font-style: normal;
   font-weight: 600;
   cursor: pointer;
-  color: white;
-  background-color: var(--link-color);
+  color: #fff;
+  background: linear-gradient(45deg, #01321b, #111314);
   margin: 10px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-a.button:hover, a.button:focus, button:hover, button:focus  {
+/* Hover Effect */
+a.button:any-link:hover, button:hover {
+  background-color: #090a0b;
+  transform: translateY(-2px);
+}
+
+/* Active Effect */
+a.button:any-link:active, button:active {
+  background-color: #004080;
+  transform: translateY(2px);
+}
+
+
+ a.button:focus, button:hover, button:focus  {
   background-color: var(--link-hover-color);
   cursor: pointer;
 }
