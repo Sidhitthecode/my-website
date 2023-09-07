@@ -10,7 +10,7 @@
 .cards > ul > li {
   border: 1px solid var(--highlight-background-color);
   background-color: var(--background-color);
-   animation: pulse 1.5s infinite ease-in-out;
+   animation: pulse 1.5s ease-in-out;
 }
 @keyframes pulse {
   0% {
