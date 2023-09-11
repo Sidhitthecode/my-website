@@ -1,5 +1,5 @@
 {
-  "project": "my-website",
+  "project": "Example",
   "plugins": [
     {
       "id": "library",
@@ -8,81 +8,6 @@
         "edit"
       ],
       "url": "/tools/sidekick/library.html",
-      "includePaths": [
-        "**.docx**"
-      ]
-    },
-    {
-      "id": "tools",
-      "title": "Tools",
-      "isContainer": true
-    },
-    {
-      "title": "hit the code",
-      "id": "htc",
-      "environments": [
-        "dev",
-        "preview",
-        "live"
-      ],
-      "event": "htc"
-    },
-    {
-      "containerId": "tools",
-      "id": "localize",
-      "title": "Localize",
-      "environments": [
-        "edit"
-      ],
-      "url": "https://milo.adobe.com/tools/loc/index.html",
-      "passReferrer": true,
-      "passConfig": true,
-      "excludePaths": [
-        "/**"
-      ],
-      "includePaths": [
-        "**/:x**"
-      ]
-    },
-    {
-      "containerId": "tools",
-      "title": "Check Schema",
-      "id": "checkschema",
-      "environments": [
-        "prod"
-      ],
-      "event": "check-schema",
-      "excludePaths": [
-        "/tools**",
-        "*.json"
-      ]
-    },
-    {
-      "containerId": "tools",
-      "title": "Preflight",
-      "id": "preflight",
-      "environments": [
-        "dev",
-        "preview",
-        "live"
-      ],
-      "event": "preflight"
-    },
-    {
-      "containerId": "tools",
-      "id": "locales",
-      "title": "Locales",
-      "environments": [
-        "edit",
-        "dev",
-        "preview",
-        "live"
-      ],
-      "isPalette": true,
-      "passConfig": true,
-      "passReferrer": true,
-      "paletteRect": "top: auto; bottom: 25px; left: 75px; height: 388px; width: 360px;",
-      "url": "https://milo.adobe.com/tools/locale-nav",
       "includePaths": [
         "**.docx**"
       ]
