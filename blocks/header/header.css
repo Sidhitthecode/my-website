@@ -275,18 +275,4 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
-header {
-  transform: translateY(-100%);
-  animation: slideIn 1s ease-in-out forwards;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 
