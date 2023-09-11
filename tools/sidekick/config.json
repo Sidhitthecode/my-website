@@ -8,8 +8,8 @@
       ],
       "isPalette": true,
       "passConfig": true,
-      "paletteRect": "top: auto; bottom: 20px; left: 20px; height: 1000px; width: 360px;",
-      "url": "/tools/sidekick/library.html",
+      "paletteRect": "top: auto; bottom: 20px; left: 20px; height: 500px; width: 500px;",
+      "url": "https://milo.adobe.com/tools/library",
       "includePaths": [
         "**.docx**"
       ]
