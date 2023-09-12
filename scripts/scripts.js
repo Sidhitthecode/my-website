@@ -150,7 +150,7 @@ export function getOrigin() {
  * @returns {String} The href of the current page or the href of the block running in the library
  */
 export function getHref() {
-  if (window.location.href !== 'about:srcdoc') return window.location.href;
+  if (window.location.href === 'about:srcdoc') return window.location.href;
 
   const { location: parentLocation } = window.parent;
   const urlParams = new URLSearchParams(parentLocation.search);

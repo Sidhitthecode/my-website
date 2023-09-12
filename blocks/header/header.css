@@ -72,7 +72,7 @@ header nav .nav-hamburger button {
   border-radius: 0;
   padding: 0;
   background-color: var(--background-color);
-  color: inherit;
+  color: white;
   overflow: initial;
   text-overflow: initial;
   white-space: initial;
@@ -275,4 +275,5 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+
 
