@@ -1,11 +1,17 @@
 .columns > div {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Change to flex to ensure all items are in a row */
+  align-items: center; /* Center items vertically */
+  gap: 10px;
 }
 
 .columns img {
-  width: 100%;
-  border-radius: 15px;
+  width: 10%;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.columns img:hover {
+  transform: translateY(-5px); /* Move the image 5 pixels up on hover */
 }
 
 .columns > div > div {
@@ -22,13 +28,12 @@
 
 @media (min-width: 900px) {
   .columns > div {
-    align-items: center;
+    align-items:center;
     flex-direction: unset;
-    gap: 32px;
+    gap: 10px;
   }
 
   .columns > div > div {
-    flex: 1;
     order: unset;
   }
 }
