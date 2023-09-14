@@ -3,11 +3,11 @@
 main .hero-container > div {
   max-width: unset;
 }
-  
+
 main .hero-container {
   padding: 0;
 }
-  
+
 main .hero {
   position: relative;
   padding: 5px;
@@ -34,7 +34,6 @@ main .hero h1 {
   color: white;
   animation: slide-in 1s ease forwards;
 }
-
 
 main .hero picture {
   position: absolute;
