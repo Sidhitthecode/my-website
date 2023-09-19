@@ -7,7 +7,7 @@
       "environments": [
         "edit"
       ],
-      "url": "https://milo.adobe.com/tools/library",
+      "url": "/tools/sidekick/library.html",
       "includePaths": [
         "**.docx**"
       ]
