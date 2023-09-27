@@ -4,7 +4,7 @@ export default function decorate(block) {
     container.style.alignItems = "center";
 
     const beforeText = document.createElement('span');
-    beforeText.textContent = "We are Hit The Code";
+    beforeText.textContent = "We are Hit The Code, We";
     beforeText.style.marginRight = "10px";
     beforeText.style.fontWeight = "bold";
     const ul = document.createElement('ul');
@@ -21,11 +21,11 @@ export default function decorate(block) {
     const afterText = document.createElement('span');
     afterText.textContent = "Solution";
     afterText.style.marginLeft = "10px";
-    afterText.style.fontWeight = "bold"; // Make the text bold
+    afterText.style.fontWeight = "bold";
 
-    const li = document.createElement('li'); // Create a list item
-    li.textContent = "Find"; // Initial text content
-    ul.appendChild(li); // Add the list item to the ul
+    const li = document.createElement('li');
+    li.textContent = "Find";
+    ul.appendChild(li);
 
     container.appendChild(beforeText);
     container.appendChild(ul);
