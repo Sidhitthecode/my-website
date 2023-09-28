@@ -14,7 +14,7 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
-  --background-color: rgb(161, 183, 161);
+  --background-color: #ffbab1;
   --overlay-background-color: #eee;
   --highlight-background-color: #080505;
   --text-color: #000;
@@ -138,6 +138,10 @@ a:hover {
 }
 
 /* buttons */
+/* Center-align the button */
+.button-container {
+  text-align: center;
+}
 a.button:any-link, button {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
@@ -153,26 +157,20 @@ a.button:any-link, button {
   font-weight: 600;
   cursor: pointer;
   color: #fff;
-  background: linear-gradient(45deg, #01321b, #111314);
+  background: linear-gradient(45deg, #b33d2e, #8d1f11);
   margin: 10px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 5px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px #8d1f11;
   transition: background-color 0.3s, transform 0.2s;
 }
 
 /* Hover Effect */
 a.button:any-link:hover, button:hover {
-  background-color: #090a0b;
+  background-color: #8d1f11;
   transform: translateY(-2px);
-}
-
-/* Active Effect */
-a.button:any-link:active, button:active {
-  background-color: #004080;
-  transform: translateY(2px);
 }
 
  a.button:focus, button:hover, button:focus  {
