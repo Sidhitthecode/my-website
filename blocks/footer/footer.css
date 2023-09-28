@@ -19,7 +19,7 @@ footer .footer {
 footer .footer p {
   margin: 0;
   font-size: 14px; /* Adjust font size for footer text */
-  color: #777; /* Use a slightly lighter color for text */
+  color: black; /* Use a slightly lighter color for text */
 }
 
 /* Footer Link Style */
