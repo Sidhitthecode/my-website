@@ -1,0 +1,36 @@
+/* rotator.css */
+
+/* Container styles */
+.rotator-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Before text styles */
+.before-text {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* UL styles */
+.rotator-ul {
+    width: 80px;
+    height: 50px;
+    background: #519d58;
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* After text styles */
+.after-text {
+    margin-left: 10px;
+    font-weight: bold;
+}

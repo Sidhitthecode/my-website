@@ -1,29 +1,17 @@
 export default function decorate(block) {
     const container = document.createElement('div');
-    container.style.display = "flex";
-    container.style.alignItems = "center";
-    container.style.justifyContent = "center"; // Center content horizontally
+    container.classList.add('rotator-container');
 
     const beforeText = document.createElement('span');
     beforeText.textContent = "We are Hit The Code, We";
-    beforeText.style.marginRight = "10px";
-    beforeText.style.fontWeight = "bold";
+    beforeText.classList.add('before-text');
 
     const ul = document.createElement('ul');
-    ul.style.width = "80px";
-    ul.style.height = "50px";
-    ul.style.background = "#519d58";
-    ul.style.color = "white";
-    ul.style.listStyleType = "none";
-    ul.style.padding = "0";
-    ul.style.display = "flex";
-    ul.style.alignItems = "center";
-    ul.style.justifyContent = "center";
+    ul.classList.add('rotator-ul');
 
     const afterText = document.createElement('span');
     afterText.textContent = "Solution";
-    afterText.style.marginLeft = "10px";
-    afterText.style.fontWeight = "bold";
+    afterText.classList.add('after-text');
 
     const li = document.createElement('li');
     li.textContent = "Find";
@@ -38,8 +26,12 @@ export default function decorate(block) {
     let currentIndex = 0;
 
     function updateText() {
-        li.textContent = words[currentIndex];
-        currentIndex = (currentIndex + 1) % words.length;
+        ul.style.width = "0"; // Reduce the width to zero
+        setTimeout(() => {
+            li.textContent = words[currentIndex];
+            currentIndex = (currentIndex + 1) % words.length;
+            ul.style.width = "80px"; // Restore the width
+        }, 300); // Set a timeout to change the text and restore the width after 300ms (0.3s)
     }
 
     setInterval(updateText, 1000); // Set an interval to update the text every 1000ms (1 second)
