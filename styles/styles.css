@@ -157,13 +157,13 @@ a.button:any-link, button {
   font-weight: 600;
   cursor: pointer;
   color: #fff;
-  background: linear-gradient(45deg, #b33d2e, #8d1f11);
+  background: linear-gradient(45deg, black, #373736);
   margin: 10px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 5px;
-  box-shadow: 0 3px 6px #8d1f11;
+  box-shadow: 0 3px 6px #191919;
   transition: background-color 0.3s, transform 0.2s;
 }
 
