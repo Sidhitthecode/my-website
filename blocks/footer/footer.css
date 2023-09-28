@@ -1,7 +1,7 @@
 /* Footer Container */
 footer {
   padding: 1rem 0; /* Add spacing at the top and bottom */
-  background-color: #8d1f11;
+  background-color: white;
   font-size: 16px; /* Adjust font size */
   color: #555; /* Set a text color */
   display: flex; /* Use flexbox for centering */
