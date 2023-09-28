@@ -1,0 +1,39 @@
+.columns > div {
+  display: flex; /* Change to flex to ensure all items are in a row */
+  align-items: center; /* Center items vertically */
+  gap: 10px;
+}
+
+.columns img {
+  width: 10%;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.columns img:hover {
+  transform: translateY(-5px); /* Move the image 5 pixels up on hover */
+}
+
+.columns > div > div {
+  order: 1;
+}
+
+.columns > div > .columns-img-col {
+  order: 0;
+}
+
+.columns > div > .columns-img-col img {
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .columns > div {
+    align-items:center;
+    flex-direction: unset;
+    gap: 10px;
+  }
+
+  .columns > div > div {
+    order: unset;
+  }
+}
