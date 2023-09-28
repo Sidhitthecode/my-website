@@ -2,11 +2,13 @@ export default function decorate(block) {
     const container = document.createElement('div');
     container.style.display = "flex";
     container.style.alignItems = "center";
+    container.style.justifyContent = "center"; // Center content horizontally
 
     const beforeText = document.createElement('span');
     beforeText.textContent = "We are Hit The Code, We";
     beforeText.style.marginRight = "10px";
     beforeText.style.fontWeight = "bold";
+
     const ul = document.createElement('ul');
     ul.style.width = "80px";
     ul.style.height = "50px";
