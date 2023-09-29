@@ -26,15 +26,7 @@ main .hero {
   }
 }
 
-/* Apply the animation to the h1 element */
-main .hero h1 {
-  max-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  animation: slide-in 1s ease forwards;
-}
-
+/* Add a transition to the hero image */
 main .hero picture {
   position: absolute;
   z-index: -1;
@@ -44,6 +36,37 @@ main .hero picture {
   right: 0;
   object-fit: cover;
   box-sizing: border-box;
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: image-fade-in 1s ease forwards; /* Define the animation */
+}
+
+@keyframes image-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the h1 element */
+main .hero h1 {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  animation: text-slide-in 1s ease forwards;
+}
+
+@keyframes text-slide-in {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 main .hero img {
