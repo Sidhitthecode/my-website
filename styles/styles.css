@@ -271,3 +271,11 @@ main .section {
 main .section.highlight.section1 {
   background-color: var(--highlight-background-color);
 }
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+

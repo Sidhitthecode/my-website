@@ -1,33 +1,56 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styles */
+.column-container {
+    width: 100%; /* Full width of the screen */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 40px; /* Padding around the container */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Columns styles */
 .column > div {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between column elements */
 }
 
 .column img {
-  width: 100%;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio for images */
 }
 
-.column > div > div {
-  order: 1;
+/* Typography */
+.column {
+    font-family: Arial, sans-serif; /* Use a readable font */
+    font-size: 18px; /* Base font size */
+    color: #333; /* Text color */
+    line-height: 1.5; /* Line height for readability */
 }
 
-.column > div > .column-img-col {
-  order: 0;
+/* Hover effect for interactive elements */
+.column a:hover {
+    color: #007bff; /* Change link color on hover */
+    transition: color 0.3s ease; /* Smooth transition effect */
 }
 
-.column > div > .column-img-col img {
-  display: block;
+/* Media query for responsiveness */
+@media (min-width: 768px) {
+    .column-container {
+        padding: 60px; /* Increase padding on larger screens */
+    }
+
+    .column > div {
+        flex-direction: row; /* Arrange columns side by side on larger screens */
+    }
 }
 
-@media (min-width: 900px) {
-  .column > div {
-    align-items: center;
-    flex-direction: unset;
-    gap: 32px;
-  }
-
-  .column > div > div {
-    flex: 1;
-    order: unset;
-  }
+/* Accessibility */
+.column img {
+    alt: ""; /* Provide descriptive alt text for images */
 }
