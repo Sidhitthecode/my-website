@@ -10,33 +10,47 @@
 .cards > ul > li {
   border: 1px solid var(--highlight-background-color);
   background-color: var(--background-color);
-   animation: pulse 1.5s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
 }
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
+
+.cards > ul > li:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
 .cards .cards-card-body {
-  margin: 16px;
+  padding: 16px;
 }
 
-.cards .cards-card-image {
-  line-height: 0;
-}
-
-.cards .cards-card-body > *:first-child {
-  margin-top: 0;
-}
-
-.cards > ul > li img {
+.cards .cards-card-image img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 200px; /* Set a fixed height for better consistency */
   object-fit: cover;
+  border-bottom: 1px solid var(--highlight-background-color);
+}
+
+.cards .cards-card-body h2 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.cards .cards-card-body p {
+  font-size: 1em;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+/* Add animations for a subtle hover effect */
+.cards > ul > li:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+/* Additional responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .cards > ul {
+    grid-template-columns: 1fr;
+  }
 }
