@@ -1,6 +1,6 @@
 .columns > div {
-  display: flex; /* Change to flex to ensure all items are in a row */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .columns img:hover {
-  transform: translateY(-5px); /* Move the image 5 pixels up on hover */
+  transform: translateY(-5px);
 }
 
 .columns > div > div {

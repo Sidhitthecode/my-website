@@ -26,11 +26,11 @@ export default function decorate(block) {
     let currentIndex = 0;
 
     function updateText() {
-        ul.style.width = "0"; // Reduce the width to zero
+        ul.style.width = "0";
         setTimeout(() => {
             li.textContent = words[currentIndex];
             currentIndex = (currentIndex + 1) % words.length;
-            ul.style.width = "80px"; // Restore the width
+            ul.style.width = "80px";
         }, 300); // Set a timeout to change the text and restore the width after 300ms (0.3s)
     }
 

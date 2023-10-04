@@ -12,8 +12,8 @@
   position: relative;
   max-height: 250px;
   overflow: hidden;
-  border-radius: 10px; /* Rounded corners for the boxes */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for the boxes */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .box > ul > li .box-card-image {
@@ -39,14 +39,14 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px); /* Start position: move boxes slightly downward */
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* End position: move boxes back to original position */
+    transform: translateY(0);
   }
 }
 
 .box > ul > li {
-  animation: fadeIn 0.5s ease-in-out; /* Apply the fadeIn animation to boxes */
+  animation: fadeIn 0.5s ease-in-out;
 }

@@ -14,7 +14,6 @@ main .hero {
   min-height: 300px;
 }
 
-/* Define the animation keyframes */
 @keyframes slide-in {
   0% {
     transform: translateY(-100%);
@@ -26,7 +25,6 @@ main .hero {
   }
 }
 
-/* Add a transition to the hero image */
 main .hero picture {
   position: absolute;
   z-index: -1;
@@ -36,8 +34,8 @@ main .hero picture {
   right: 0;
   object-fit: cover;
   box-sizing: border-box;
-  opacity: 0; /* Set initial opacity to 0 */
-  animation: image-fade-in 1s ease forwards; /* Define the animation */
+  opacity: 0;
+  animation: image-fade-in 1s ease forwards;
 }
 
 @keyframes image-fade-in {
@@ -49,7 +47,6 @@ main .hero picture {
   }
 }
 
-/* Apply the animation to the h1 element */
 main .hero h1 {
   max-width: 200px;
   margin-left: auto;
