@@ -1,0 +1,63 @@
+/* block specific CSS goes here */
+
+main .marquee-container > div {
+  max-width: unset;
+}
+
+main .marquee-container {
+  padding: 0;
+}
+.marquee-wrapper .marquee .block div > div {
+  /* Your CSS styles for <div>sdcss</div> go here */
+  /* For example: */
+  background-color: #ff0000; /* Red background color */
+  color: #ffffff; /* White text color */
+  padding: 10px; /* Padding around the content */
+  /* Add more styles as needed */
+}
+
+main .marquee {
+  position: relative;
+  padding: 5px;
+  min-height: 300px;
+  overflow: hidden; /* Hide overflow to prevent content from showing outside the marquee */
+  left: -100%; /* Initial position outside of the screen */
+  animation: slide-in 1s ease forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    left: -100%; /* Start from outside of the screen */
+  }
+  100% {
+    left: 0; /* End at the left edge of the screen */
+  }
+}
+
+main .marquee picture {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+  opacity: 0;
+  animation: image-fade-in 1s ease forwards;
+}
+
+@keyframes image-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main .marquee img {
+  object-fit: cover;
+  width: 60%; /* Reduce the image size to half */
+  height: 80%; /* Reduce the image size to half */
+}
