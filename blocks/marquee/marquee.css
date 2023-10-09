@@ -7,14 +7,6 @@ main .marquee-container > div {
 main .marquee-container {
   padding: 0;
 }
-.marquee-wrapper .marquee .block div > div {
-  /* Your CSS styles for <div>sdcss</div> go here */
-  /* For example: */
-  background-color: #ff0000; /* Red background color */
-  color: #ffffff; /* White text color */
-  padding: 10px; /* Padding around the content */
-  /* Add more styles as needed */
-}
 
 main .marquee {
   position: relative;
