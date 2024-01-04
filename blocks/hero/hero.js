@@ -3,13 +3,13 @@ export default function decorate(block) {
     container.className = 'hero block';
 
     // Create the video element
-    const video = document.createElement("video");
+    const video = document.createElement("iframe");
 
     video.setAttribute("data-t", "video-lp-hero");
-    video.src = "https://drive.google.com/file/d/1O9FgMCRv5Gcf_jJt3-EQ5dio6AJ-wYAe/view?usp=drive_link";
-    video.autoplay = true;
-    video.loop = true;
-    video.controls = true;
+    video.src = "https://drive.google.com/file/d/1sEg72ZXafxSgr6lIL0EQ8DfoYklg0ptw/preview";
+    video.allow = "autoplay; fullscreen; encrypted-media; picture-in-picture";
+    video.muted = true;
+    video.allowFullscreen = true;
     video.className = "your-video-embed-class";
 
     container.appendChild(video);
