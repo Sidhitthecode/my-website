@@ -1,21 +1,27 @@
 export default function decorate(block) {
     const container = document.createElement('div');
+    container.className = 'hero block';
 
     // Create the video element
     const video = document.createElement("video");
 
     video.setAttribute("data-t", "video-lp-hero");
-    video.src = "https://drive.google.com/uc?id=1FpMxRRLlKAYvYjCNG3nT9avxb3827me-";
+    video.src = "https://drive.google.com/file/d/1O9FgMCRv5Gcf_jJt3-EQ5dio6AJ-wYAe/view?usp=drive_link";
     video.autoplay = true;
     video.loop = true;
     video.controls = true;
     video.className = "your-video-embed-class";
 
     container.appendChild(video);
+    const textOverlay = document.createElement('div');
+    textOverlay.className = 'text-overlay';
+    textOverlay.innerHTML = '<h1>Hit the code</h1>';
+
+    container.appendChild(textOverlay);
+    document.body.appendChild(container);
 
     const targetElement = document.querySelector('.hero.block');
 
-    // Check if the target element is found before appending
     if (targetElement) {
         targetElement.appendChild(container);
     } else {
